@@ -12,11 +12,11 @@ class Song
 end
 
 @@all
-end 
+end
 
  def self.create
    newsong = self.new
-   newsong.name = name
+   @@all << newsong
    newsong
  end
 
