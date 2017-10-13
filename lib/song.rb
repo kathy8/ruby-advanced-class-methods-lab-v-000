@@ -57,7 +57,7 @@ else
  end
 
  def self.create_from_filename(filename)
-new_song=Song.new
+new_name=Song.new
 new_song.name=filename.split(" - ")[1].split(".")[0]
 new_song.artist_name=filename.split(" - ")[0]
 @@all << new_song
