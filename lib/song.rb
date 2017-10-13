@@ -40,7 +40,7 @@ end
    if result_of_search == nil
   self.create_by_name(name)
 else
-  return result_of_search 
+  return result_of_search
  end
  end
 
@@ -63,7 +63,7 @@ new_song.artist_name=filename.split(" - ")[0]
 @@all << new_song
  end
 
- 
+
  def self.destroy_all
    self.all.clear
    @@all.clear
