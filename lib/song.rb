@@ -11,9 +11,6 @@ class Song
   end
 end
 
-@@all
-  end
-
 
  def self.create
    newsong = self.new
@@ -70,4 +67,4 @@ end
  def self.destroy_all
    self.all.clear
   end
-  
+end
