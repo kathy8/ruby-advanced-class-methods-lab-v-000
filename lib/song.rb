@@ -28,6 +28,7 @@ end
 
 def self.create_by_name(name)
   newsong = self.new
+  @@all << newsong
   newsong.name = name
   newsong
 end
@@ -57,11 +58,10 @@ end
   song = self.new
   song.artist_name = newname[0]
   song.name = newname[1]
-  song.save
   song
  end
 
- def self.create_from_filename(name)
+ def self.create_from_filename(filename)
   newname = filename.split(/\s\-\s|\./)
   song = self.new
   song.artist_name = newname[0]
