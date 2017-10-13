@@ -57,6 +57,7 @@ end
   song = self.new
   song.artist_name = newname[0]
   song.name = newname[1]
+  song.save
   song
  end
 
