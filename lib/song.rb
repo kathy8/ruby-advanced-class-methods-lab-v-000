@@ -11,6 +11,8 @@ class Song
   end
 end
 
+@@all
+end 
 
  def self.create
    newsong = self.new
