@@ -21,8 +21,8 @@ end
  end
 
 def self.new_by_name(name)
-  new_song = self.new
-  new_song.name = name
+  newsong = self.new
+  newsong.name = name
   newsong
 end
 
@@ -32,7 +32,15 @@ def self.create_by_name(name)
   newsong
 end
 
+
+
+
+
  def self.find_by_name(name)
+@@all.detect{|song| song.name == name}
+end
+
+   def self.find_or_create_by_name(name)
    if self.find_by_name(name) == nil
      self.create_byname(name)
    else self.find_by_name(name)
